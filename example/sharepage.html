@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery SharePage plugin example</title>
+  <meta name="description" content="jQuery SharePage plugin example">
+  <meta name="author" content="Michael Hohlovich">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.sharepage.css">
+  <style type="text/css">
+    .share-page {
+      width: 200px;
+      margin: 100px auto 0;
+    }
+  </style>
+  <script src="js/jquery.min.js"></script>
+  <script src="../js/jquery.sharepage.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#share-buttons").sharepage({
+        networks: ["linkedin", "facebook", "twitter", "googleplus", "vk", "unknown"],
+        url: "http://google.com",
+        title: "SharePage example title",
+        source: "SharePage example page",
+        width: 650,
+        height: 600,
+        design: "buttons"
+      });
+      $("#destroy").click(function(){
+        $("#share-buttons").sharepage("destroy");
+      });
+    });
+  </script>
+  <style type="text/css">
+
+  </style>
+</head>
+<body>
+  <div id="share-buttons"></div>
+  <button id="destroy">Destroy</button>
+</body>
+</html>

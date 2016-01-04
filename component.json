@@ -1,6 +1,6 @@
 {
   "name": "sharepage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": [
     "js/jquery.sharepage.min.js",
     "css/jquery.sharepage.css",

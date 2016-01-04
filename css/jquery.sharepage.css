@@ -1,4 +1,4 @@
-/* SharePage 1.0.1 styles by Michael Hohlovich */
+/* SharePage 1.0.2 styles by Michael Hohlovich */
 
 /* Common styles */
 
@@ -88,5 +88,60 @@
   background-color: #4B73A4;
 }
 .share-page.share-buttons .network.vk:before {
+  background-position: left -120px;
+}
+
+/* Icons design */
+
+.share-page.share-icons .network {
+  color: #333;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 7px 8px 8px 34px;
+  min-height: 15px;
+}
+.share-page.share-icons .network:before {
+  background-image: url("../images/social-icons-color.svg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 30px 150px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.share-page.share-icons .network .counter {
+  float: right;
+  padding: 0 3px;
+  color: #333;
+  min-width: 20px;
+  display: inherit;
+  text-align: center;
+  font-size: 13px;
+  text-shadow: none;
+}
+.share-page.share-icons .network .title {
+  display: none;
+}
+.share-page.share-icons .network + .network {
+  margin-top: 10px;
+}
+.share-page.share-icons .network.linkedin:before {
+  background-position: left top;
+}
+.share-page.share-icons .network.facebook:before {
+  background-position: left -30px;
+}
+.share-page.share-icons .network.twitter:before {
+  background-position: left -60px;
+}
+.share-page.share-icons .network.googleplus:before {
+  background-position: left -90px;
+}
+.share-page.share-icons .network.vk:before {
   background-position: left -120px;
 }

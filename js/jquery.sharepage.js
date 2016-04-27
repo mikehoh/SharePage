@@ -1,4 +1,4 @@
-/* SharePage 1.0.2 by Michael Hohlovich */
+/* SharePage 1.0.3 by Michael Hohlovich */
 (function($) {
 
   var init = function(params) {

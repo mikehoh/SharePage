@@ -1,4 +1,4 @@
-/* SharePage 1.0.2 by Michael Hohlovich */
+/* SharePage 1.1 by Michael Hohlovich */
 (function($) {
 
   var init = function(params) {
@@ -85,14 +85,11 @@
   };
 
   var getFacebook = function(url, callback) {
-    var fql  = "SELECT url, normalized_url, share_count, like_count, comment_count, " +
-               "total_count, commentsbox_count, comments_fbid, click_count FROM " +
-               "link_stat WHERE url = '" + url + "'";
     $.ajax({
-      url: "https://api.facebook.com/method/fql.query?format=json&query=" + encodeURIComponent(fql),
+      url: "http://graph.facebook.com/?id=" + url,
       success: function(data) {
-        if (data[0]) {
-          callback(data[0].total_count);
+        if (data === Object(data)) {
+          callback(data.share.share_count);
         } else {
           this.error();
         };

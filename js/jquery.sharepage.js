@@ -86,7 +86,7 @@
 
   var getFacebook = function(url, callback) {
     $.ajax({
-      url: "http://graph.facebook.com/?id=" + url,
+      url: "https://graph.facebook.com/?id=" + url,
       success: function(data) {
         if (data === Object(data)) {
           callback(data.share.share_count);

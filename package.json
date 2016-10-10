@@ -1,10 +1,6 @@
 {
   "name": "sharepage",
-<<<<<<< HEAD
-  "version": "1.1",
-=======
-  "version": "1.0.3",
->>>>>>> 8497f4697aa5fee5b33cf11789699f2cfe85d294
+  "version": "1.1.1",
   "repository": {
     "type": "git",
     "url": "git@github.com:mikehoh/SharePage.git"

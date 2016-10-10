@@ -1,4 +1,4 @@
-/* SharePage 1.1 by Michael Hohlovich */
+/* SharePage 1.1.1 by Michael Hohlovich */
 (function($) {
 
   var init = function(params) {
@@ -89,7 +89,10 @@
       url: "https://graph.facebook.com/?id=" + url,
       success: function(data) {
         if (data === Object(data)) {
-          callback(data.share.share_count);
+          var ref;
+          if ((ref = data.share) != null) {
+            callback(data.share.share_count);
+          }
         } else {
           this.error();
         };
